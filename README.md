@@ -141,3 +141,45 @@ before you add it to the bundle."
     
 ###### Please Note: It is important to remember that when defining rules in your webpack config, you are defining them under module.rules and not rules. For your benefit, webpack will 'yell at you' if this is done incorrectly.
 
+&nbsp;
+## Plugins
+
+While **Loaders only** execute transformations on a **per-file basis**, 
+**plugins** are most commonly used to perform actions and 
+custom functionality on **"compilations" or "chunks"** of your bundled modules. 
+
+**Q.** How to use plugins?  
+**A.** In order to use a plugin, you just need to **require()** it and 
+add it to the plugins array.
+
+**More....**  
+Most plugins are **customizable** via options. 
+Since you can use a **plugin multiple times** in a config for **different purposes**, 
+you need to create an **instance** of it by calling it with **new**. 
+ 
+
+***webpack.config.js***
+
+    const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
+    const webpack = require('webpack'); //to access built-in plugins
+    const path = require('path');
+    
+    const config = {
+       entry: './src/js/app.js',
+       output: {
+         path: path.resolve(__dirname, 'static'),
+         filename: 'bundle.js'
+       },
+      module: {
+        rules: [
+          { test: /\.txt$/, use: 'raw-loader' }
+        ]
+      },
+      plugins: [
+        new webpack.optimize.UglifyJsPlugin(),
+        new HtmlWebpackPlugin({template: './src/index.html'})
+      ]
+    };
+    
+    module.exports = config;
+
