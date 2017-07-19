@@ -193,5 +193,6 @@ and then run webpack:
 
     webpack
     
+###### Please Note: Here we have installed webpack once again because we want to access its files. As it was installed globally, so we need to install it locally as well to use its functionalities.
 
 
