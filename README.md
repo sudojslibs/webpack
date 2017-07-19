@@ -19,3 +19,16 @@ understand the 4 basic concepts of it:
 3. ***loader***
 4. ***plugins***
 
+
+##### Note: All the configuration settings for webpack are stored
+in a separate file called ***webpack.config.js***.
+
+So, let us **create a new file: webpack.config.js**
+
+&nbsp;
+## Entry
+
+Entry is basically the **first file** from which the webpack
+**starts its processing**. It is also called as the ***entry*** point
+or ***root*** of your app (for webpack).
+
