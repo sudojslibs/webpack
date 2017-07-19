@@ -182,4 +182,16 @@ you need to create an **instance** of it by calling it with **new**.
     };
     
     module.exports = config;
+    
+
+You need to install **html-webpack-plugin** via npm before using it:
+
+    npm i --save html-webpack-plugin webpack
+    
+Then, create a new **index.html** file (for trying out html-webpack-plugin) in **src directory**,
+and then run webpack:
+
+    webpack
+    
+
 
