@@ -45,3 +45,57 @@ Now, let us create the directory-structure for our project.
 2. ***static***: contains the **static assets**. For instance: index.html
   and bundle.js. The browser will **only load the static files**.
 
+&nbsp;
+## Output
+
+Once all your files are bundled up, you need to tell webpack 
+where to **store the bundled file**. This is done via ***output***. 
+
+***webpack.config.js***
+
+    const path = require('path');
+    
+    module.exports = {
+      entry: './src/js/app.js',
+      output: {
+        path: path.resolve(__dirname, 'static'),
+        filename: 'bundle.js'
+      }
+    };
+
+To use **path** node module, we need to install it first.
+ 
+    npm init -y
+    npm i --save path
+    
+The 1st line will **create a package.json** file with default settings (-y flag).      
+The 2nd line will **install the path node module** locally in the project.
+
+Now, we will **create** another js file and make the 1st 
+file **dependent** on the 2nd one.   
+
+Now is the time to use webpack. But before using it, we need to 
+install it.   
+
+For PC:
+
+    npm i --global --save webpack
+     
+  
+   
+For Linux: 
+   
+    sudo npm i --global --save webpack
+    
+  
+&nbsp;
+    
+Now, just run:        
+
+    webpack
+    
+    
+in your terminal and booom!    
+Check your console!
+    
+    
