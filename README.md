@@ -20,8 +20,7 @@ understand the 4 basic concepts of it:
 4. ***plugins***
 
 
-###### Note: All the configuration settings for webpack are stored
-in a separate file called ***webpack.config.js***.
+###### Note: All the configuration settings for webpack are stored in a separate file called ***webpack.config.js***.
 
 So, let us **create a new file: webpack.config.js**
 
