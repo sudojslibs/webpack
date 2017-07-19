@@ -141,6 +141,7 @@ before you add it to the bundle."
     
 ###### Please Note: It is important to remember that when defining rules in your webpack config, you are defining them under module.rules and not rules. For your benefit, webpack will 'yell at you' if this is done incorrectly.
 
+#### [Click here for a detailed list of webpack loaders](https://webpack.js.org/concepts/loaders/)
 &nbsp;
 ## Plugins
 
@@ -195,4 +196,5 @@ and then run webpack:
     
 ###### Please Note: Here we have installed webpack once again because we want to access its files. As it was installed globally, so we need to install it locally as well to use its functionalities.
 
+#### [Click here for a detailed list of webpack plugins](https://webpack.js.org/plugins/)
 
