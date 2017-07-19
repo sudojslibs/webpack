@@ -32,3 +32,16 @@ Entry is basically the **first file** from which the webpack
 **starts its processing**. It is also called as the ***entry*** point
 or ***root*** of your app (for webpack).
 
+The simplest example is seen below:
+
+***webpack.config.js***
+
+    module.exports = {
+      entry: './path/to/my/entry/file.js'
+    };
+
+Now, let us create the directory-structure for our project. 
+1. ***src***: contains all the **dynamic js files**.
+2. ***static***: contains the **static assets**. For instance: index.html
+  and bundle.js. The browser will **only load the static files**.
+
