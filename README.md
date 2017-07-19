@@ -20,7 +20,7 @@ understand the 4 basic concepts of it:
 4. ***plugins***
 
 
-##### Note: All the configuration settings for webpack are stored
+###### Note: All the configuration settings for webpack are stored
 in a separate file called ***webpack.config.js***.
 
 So, let us **create a new file: webpack.config.js**
@@ -77,13 +77,13 @@ file **dependent** on the 2nd one.
 Now is the time to use webpack. But before using it, we need to 
 install it.   
 
-For PC:
+**For PC**:
 
     npm i --global --save webpack
      
   
    
-For Linux: 
+**For Linux**: 
    
     sudo npm i --global --save webpack
     
@@ -141,3 +141,4 @@ This tells webpack's compiler the following:
 before you add it to the bundle."
     
 ###### Please Note: It is important to remember that when defining rules in your webpack config, you are defining them under module.rules and not rules. For your benefit, webpack will 'yell at you' if this is done incorrectly.
+
